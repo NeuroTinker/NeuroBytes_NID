@@ -1,4 +1,4 @@
-update=Fri 16 Jun 2017 01:29:05 PM CDT
+update=Sun 18 Jun 2017 04:00:15 PM CDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,4 @@ LibName29=valves
 LibName30=NeuroTinker_schematic_symbols
 LibName31=ftdi
 LibName32=library/texas
+LibName33=/home/jarod/neurotinker/NeuroBytes_Schematic_Lib/NeuroTinker_schematic_symbols
