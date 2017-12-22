@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/zach/Documents/NeuroTinker/Products/NeuroBytes_NID/HARDWARE/NeuroBytes_NID.sch)
-    (date "Thu 21 Dec 2017 04:35:47 PM CST")
+    (date "Thu 21 Dec 2017 04:08:50 PM CST")
     (tool "Eeschema 4.0.7-e2-6376~58~ubuntu14.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
