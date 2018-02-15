@@ -102,6 +102,9 @@ int gdb_main_loop(struct target_controller *tc, bool in_syscall)
 		size = gdb_getpacket(pbuf, BUF_SIZE);
 		SET_IDLE_STATE(0);
 		switch(pbuf[0]) {
+		case 'U': {
+			// reset to bootloader for NId programming
+		}
 		/* Implementation of these is mandatory! */
 		case 'g': { /* 'g': Read general registers */
 			ERROR_IF_NO_TARGET();
