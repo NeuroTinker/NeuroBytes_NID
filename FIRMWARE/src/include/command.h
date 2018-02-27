@@ -22,6 +22,7 @@
 #define __COMMAND_H
 
 #include "target.h"
+#include <libopencm3/cm3/scb.h>
 
 int command_process(target *t, char *cmd);
 
