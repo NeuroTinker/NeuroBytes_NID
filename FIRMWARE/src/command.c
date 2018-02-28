@@ -123,18 +123,8 @@ int command_process(target *t, char *cmd)
 
 bool cmd_enter_dfu(void)
 {
-	static uint32_t dfu_address = 0x08000000;
-	/* Boot the application if it's valid */
-	if((*(volatile uint32_t*)dfu_address & 0x2FFE0000) == 0x20000000) {
-		gdb_out("Entering DFU mode\n");
-		/* Set vector table base address */
-		SCB_VTOR = dfu_address & 0x1FFFFF; /* Max 2 MByte Flash*/
-		/* Initialise master stack pointer */
-		asm volatile ("msr msp, %0"::"g"
-				(*(volatile uint32_t*)dfu_address));
-		/* Jump to application */
-		(*(void(**)())(dfu_address + 18))();
-	}
+	dfu_protect(DFU_MODE);
+	dfu_main();	
 
 	return true;
 }
