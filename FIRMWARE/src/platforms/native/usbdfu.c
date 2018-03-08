@@ -22,6 +22,8 @@
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/cm3/scb.h>
+#include <libopencm3/stm32/f1/bkp.h>
+#include <libopencm3/stm32/f1/rtc.h>
 
 #include "usbdfu.h"
 #include "platform.h"
@@ -39,8 +41,19 @@ int main(void)
 {
 	/* Check the force bootloader pin*/
 	rcc_periph_clock_enable(RCC_GPIOB);
-	if(gpio_get(GPIOB, GPIO12))
+	// if(gpio_get(GPIOB, GPIO12))
+	// 	dfu_jump_app_if_valid();
+	// rcc_periph_clken(RCC_AHB1ENR_BKPSRAMEN);
+	RCC_APB1ENR |= RCC_APB1ENR_BKPEN; // enable backup registers to check for reset
+	RCC_APB1ENR |= RCC_APB1ENR_PWREN;
+	PWR_CR |= PWR_CR_DBP;
+	// MMIO32(RCC_APB1ENR) |= RCC_APB1ENR_PWREN;
+	
+	if (BKP_DR5 == 0b0) {
 		dfu_jump_app_if_valid();
+	} else {
+		//rcc_backupdomain_reset();
+	}
 
 	dfu_protect(DFU_MODE);
 

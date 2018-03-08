@@ -23,7 +23,10 @@
 
 #include "target.h"
 #include <libopencm3/cm3/scb.h>
-
+#include <libopencm3/stm32/pwr.h>
+#include <libopencm3/stm32/f1/bkp.h>
+#include "usbdfu.h"
+#include "platform.h"
 int command_process(target *t, char *cmd);
 
 #endif

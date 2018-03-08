@@ -35,6 +35,8 @@
 #include <libopencm3/stm32/usart.h>
 #include <libopencm3/usb/usbd.h>
 #include <libopencm3/stm32/f1/adc.h>
+#include <libopencm3/stm32/f1/bkp.h>
+#include <libopencm3/stm32/f1/rtc.h>
 
 static void adc_init(void);
 static void setup_vbus_irq(void);
@@ -96,7 +98,9 @@ void platform_init(void)
 	initialise_monitor_handles();
 #endif
 
-
+	RCC_APB1ENR |= RCC_APB1ENR_BKPEN; // enable backup registers to check for reset
+	RCC_APB1ENR |= RCC_APB1ENR_PWREN;
+	PWR_CR |= PWR_CR_DBP;
 
 	rcc_clock_setup_in_hse_8mhz_out_72mhz();
 
@@ -138,9 +142,14 @@ void platform_init(void)
 		GPIO_CNF_OUTPUT_PUSHPULL,
 		PIN_LED_USB);
 
+	gpio_set_mode(PORT_LED_PROG, GPIO_MODE_OUTPUT_2_MHZ,
+		GPIO_CNF_OUTPUT_PUSHPULL,
+		PIN_LED_PROG);
+
 	gpio_set(PORT_LED_PWR, PIN_LED_PWR);
-	//gpio_set(PORT_LED_COMMS, PIN_LED_COMMS);
-	//gpio_set(PORT_LED_USB, PIN_LED_USB);
+	gpio_set(PORT_LED_PROG, PIN_LED_PROG);
+	gpio_set(PORT_LED_COMMS, PIN_LED_COMMS);
+	gpio_set(PORT_LED_USB, PIN_LED_USB);
 	
 	/* FIXME: This pin in intended to be input, but the TXS0108 fails
 	 * to release the device from reset if this floats. */
