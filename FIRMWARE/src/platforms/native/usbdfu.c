@@ -52,7 +52,7 @@ int main(void)
 	if (BKP_DR5 == 0b0) {
 		dfu_jump_app_if_valid();
 	} else {
-		//rcc_backupdomain_reset();
+		rcc_backupdomain_reset();
 	}
 
 	dfu_protect(DFU_MODE);
