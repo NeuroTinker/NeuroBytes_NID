@@ -232,23 +232,32 @@ class Target:
 					self.blocks[index] = "".join(chr(0xff) for i in range(self.blocksize))
 				self.blocks[index] = (self.blocks[index][:bloffset] + bldata + 
 						self.blocks[index][bloffset+len(bldata):])
+				
 
 		def commit(self, progress_cb=None):
 			totalblocks = 0
 			for b in self.blocks:
 				if b is not None: totalblocks += 1
+			
+			print("total blocks")
+			print(totalblocks)
+			print len(self.blocks)
 				
 			block = 0
+			print 'test'
 			for i in range(len(self.blocks)):
+				print block
 				block += 1
-				if callable(progress_cb):
-					progress_cb(block*100/totalblocks)
-
+				# if callable(progress_cb):
+				# 	print 'test'
+				# 	progress_cb(block*100/totalblocks)
+				print 'test'
 				# Erase the block
 				data = self.blocks[i]
 				addr = self.offset + self.blocksize * i
+				print 'test'
 				if data is None: continue
-				#print "Erasing flash at 0x%X" % (self.offset + self.blocksize*i)
+				print "Erasing flash at 0x%X" % (self.offset + self.blocksize*i)
 				self.target.putpacket("vFlashErase:%08X,%08X" % 
 					(self.offset + self.blocksize*i, self.blocksize))
 				if self.target.getpacket() != 'OK': 
@@ -257,7 +266,7 @@ class Target:
 				while data:
 					d = data[0:980]
 					data = data[len(d):]
-					#print "Writing %d bytes at 0x%X" % (len(d), addr)
+					print "Writing %d bytes at 0x%X" % (len(d), addr)
 					self.target.putpacket("vFlashWrite:%08X:%s" % (addr, d))
 					addr += len(d)
 					if self.target.getpacket() != 'OK': 
@@ -295,7 +304,9 @@ class Target:
 				m.prog(address, data)
 
 	def flash_commit(self, progress_cb=None):
+		print(self.mem)
 		for m in self.mem:
+			print (m.blocksize)
 			m.commit(progress_cb)
 
 

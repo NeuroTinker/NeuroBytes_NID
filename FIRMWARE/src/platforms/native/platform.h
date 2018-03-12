@@ -72,8 +72,8 @@
 #define TDO_PORT	JTAG_PORT
 #define TDI_PIN		GPIO3
 #define TMS_DIR_PIN	GPIO1
-#define TMS_PIN		GPIO1
-#define TCK_PIN		GPIO5
+#define TMS_PIN		GPIO9
+#define TCK_PIN		GPIO10
 #define TDO_PIN		GPIO1
 
 #define	PMIC_SW_PORT	GPIOB
@@ -93,7 +93,7 @@
 #define SRST_PORT	GPIOA
 #define SRST_PIN	GPIO2
 #define SRST_SENSE_PORT	GPIOA
-#define SRST_SENSE_PIN	GPIO1
+#define SRST_SENSE_PIN	GPIO4
 
 #define USB_PU_PORT	GPIOA
 #define USB_PU_PIN	GPIO8

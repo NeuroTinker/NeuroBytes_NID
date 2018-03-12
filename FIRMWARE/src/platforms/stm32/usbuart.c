@@ -84,6 +84,11 @@ void usbuart_init(void)
 	timer_enable_counter(USBUSART_TIM);
 }
 
+void usbuart_deinit(void)
+{
+	usart_disable(USBUSART);
+}
+
 /*
  * Runs deferred processing for usb uart rx, draining RX FIFO by sending
  * characters to host PC via CDCACM.  Allowed to read from FIFO in pointer,

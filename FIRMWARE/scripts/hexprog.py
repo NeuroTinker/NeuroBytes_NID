@@ -34,7 +34,7 @@ def flash_write_hex(target, hexfile, progress_cb=None):
 		if line[0] != ':': raise Exception("Error in hex file")
 		reclen = int(line[1:3], 16)
 		addrlo = int(line[3:7], 16)
-		rectype = int(line[7:9], 16);
+		rectype = int(line[7:9], 16)
 		if sum(ord(x) for x in gdb.unhexify(line[1:11+reclen*2])) & 0xff != 0:
 			raise Exception("Checksum error in hex file") 
 		if rectype == 0: # Data record
@@ -147,6 +147,7 @@ if __name__ == "__main__":
 	target.attach(targetno)
 	time.sleep(0.1)
 
+	target.interrupt()
 	if unprot:
 		print("Removing device protection.")
 		# Save option bytes for later
@@ -157,8 +158,8 @@ if __name__ == "__main__":
 		target.reset()
 		time.sleep(0.1)
 
-	for m in target.flash_probe():
-		print("FLASH memory -- Offset: 0x%X  BlockSize:0x%X\n" % (m.offset, m.blocksize))
+	# for m in target.flash_probe():
+		# print("FLASH memory -- Offset: 0x%X  BlockSize:0x%X\n" % (m.offset, m.blocksize))
 
 	def progress(percent):
 		print ("Progress: %d%%\r" % percent),

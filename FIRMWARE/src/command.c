@@ -29,6 +29,7 @@
 #include "target.h"
 #include "morse.h"
 #include "version.h"
+#include "usbuart.h"
 
 #ifdef PLATFORM_HAS_TRACESWO
 #	include "traceswo.h"
@@ -45,6 +46,8 @@ struct command_s {
 
 static bool cmd_version(void);
 static bool cmd_enter_dfu(void);
+static bool cmd_enter_swd(void);
+static bool cmd_enter_uart(void);
 static bool cmd_help(target *t);
 
 static bool cmd_jtag_scan(target *t, int argc, char **argv);
@@ -73,6 +76,8 @@ const struct command_s cmd_list[] = {
 	{"connect_srst", (cmd_handler)cmd_connect_srst, "Configure connect under SRST: (enable|disable)" },
 	{"hard_srst", (cmd_handler)cmd_hard_srst, "Force a pulse on the hard SRST line - disconnects target" },
 	{"enter_dfu", (cmd_handler)cmd_enter_dfu, "Enter DFU mode"},
+	{"enter_swd", (cmd_handler)cmd_enter_swd, "Enter SWD mode"},
+	{"enter_uart", (cmd_handler)cmd_enter_uart, "Enter UART mode"},
 #ifdef PLATFORM_HAS_POWER_SWITCH
 	{"tpwr", (cmd_handler)cmd_target_power, "Supplies power to the target: (enable|disable)"},
 #endif
@@ -121,12 +126,28 @@ int command_process(target *t, char *cmd)
 	return target_command(t, argc, argv);
 }
 
+bool cmd_enter_swd(void)
+{
+	usbuart_deinit();
+	gpio_set_mode(SWDIO_PORT, GPIO_MODE_OUTPUT_50_MHZ,
+		GPIO_CNF_OUTPUT_PUSHPULL,
+		SWDIO_PIN);
+	return false;
+}
+
+bool cmd_enter_uart(void)
+{
+	usbuart_init();
+	return false;
+}
+
 bool cmd_enter_dfu(void)
 {
-	dfu_protect(DFU_MODE);
-	dfu_main();	
-
-	return true;
+	pwr_disable_backup_domain_write_protect();
+	
+	BKP_DR5 |= 0b1; // write a bit to bkp register for restarting in dfu mode
+	scb_reset_system();
+	return false;
 }
 
 bool cmd_version(void)
