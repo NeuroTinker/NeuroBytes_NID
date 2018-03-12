@@ -1,4 +1,4 @@
-CROSS_COMPILE = stm32-
+CROSS_COMPILE = arm-none-eabi-
 CC = $(CROSS_COMPILE)gcc
 OBJCOPY = $(CROSS_COMPILE)objcopy
 

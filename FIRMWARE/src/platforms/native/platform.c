@@ -144,7 +144,7 @@ void platform_init(void)
 
 	gpio_set_mode(PORT_LED_PROG, GPIO_MODE_OUTPUT_2_MHZ,
 		GPIO_CNF_OUTPUT_PUSHPULL,
-		PIN_LED_PROG);
+		PIN_LED_PROG); // not being set for some reason....
 
 	gpio_set(PORT_LED_PWR, PIN_LED_PWR);
 	gpio_set(PORT_LED_PROG, PIN_LED_PROG);
