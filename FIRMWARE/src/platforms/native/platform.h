@@ -87,9 +87,9 @@
 #define SWCLK_PIN	TCK_PIN
 
 #define TRST_PORT	GPIOB
-#define TRST_PIN	GPIO1
+#define TRST_PIN	GPIO2
 #define PWR_BR_PORT	GPIOB
-#define PWR_BR_PIN	GPIO1
+#define PWR_BR_PIN	GPIO2
 #define SRST_PORT	GPIOA
 #define SRST_PIN	GPIO2
 #define SRST_SENSE_PORT	GPIOA
@@ -128,7 +128,7 @@
 #define PIN_LED_USB		GPIO7
 
 #define PORT_LED_PROG	GPIOB // TODO
-#define PIN_LED_PROG	GPIO0
+#define PIN_LED_PROG	GPIO1
 
 #define TMS_SET_MODE() do { \
 	gpio_set(TMS_DIR_PORT, TMS_DIR_PIN); \

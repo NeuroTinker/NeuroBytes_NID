@@ -48,6 +48,7 @@ static bool cmd_version(void);
 static bool cmd_enter_dfu(void);
 static bool cmd_enter_swd(void);
 static bool cmd_enter_uart(void);
+static bool cmd_led(void);
 static bool cmd_help(target *t);
 
 static bool cmd_jtag_scan(target *t, int argc, char **argv);
@@ -78,6 +79,7 @@ const struct command_s cmd_list[] = {
 	{"enter_dfu", (cmd_handler)cmd_enter_dfu, "Enter DFU mode"},
 	{"enter_swd", (cmd_handler)cmd_enter_swd, "Enter SWD mode"},
 	{"enter_uart", (cmd_handler)cmd_enter_uart, "Enter UART mode"},
+	{"led", (cmd_handler)cmd_led, "Toggle LED (for testing)"},
 #ifdef PLATFORM_HAS_POWER_SWITCH
 	{"tpwr", (cmd_handler)cmd_target_power, "Supplies power to the target: (enable|disable)"},
 #endif
@@ -147,6 +149,12 @@ bool cmd_enter_dfu(void)
 	
 	BKP_DR5 |= 0b1; // write a bit to bkp register for restarting in dfu mode
 	scb_reset_system();
+	return false;
+}
+
+bool cmd_led(void)
+{
+	gpio_toggle(PORT_LED_PROG, PIN_LED_PROG);
 	return false;
 }
 
