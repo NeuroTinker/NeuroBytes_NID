@@ -1475,7 +1475,7 @@ F 3 "" H 13700 1900 50  0001 C CNN
 F 4 "No" H 13700 1900 60  0001 C CNN "Subs Allowed"
 F 5 "Yes" H 13700 1900 60  0001 C CNN "RoHS"
 	1    13700 1900
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	14000 2800 16000 2800
@@ -1542,7 +1542,7 @@ F 3 "" H 13700 2300 50  0001 C CNN
 F 4 "No" H 13700 2300 60  0001 C CNN "Subs Allowed"
 F 5 "Yes" H 13700 2300 60  0001 C CNN "RoHS"
 	1    13700 2300
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Conn_01x03 J7
