@@ -65,35 +65,35 @@
 
 /* Hardware definitions... */
 #define JTAG_PORT 	GPIOA
-#define TDI_PORT	JTAG_PORT
-#define TMS_DIR_PORT	JTAG_PORT
-#define TMS_PORT	JTAG_PORT
-#define TCK_PORT	JTAG_PORT
-#define TDO_PORT	JTAG_PORT
-#define TDI_PIN		GPIO3
-#define TMS_DIR_PIN	GPIO1
-#define TMS_PIN		GPIO1
-#define TCK_PIN		GPIO5
-#define TDO_PIN		GPIO1
+#define TDI_PORT	GPIOA
+#define TMS_DIR_PORT	GPIOA
+#define TMS_PORT	GPIOA
+#define TCK_PORT	GPIOA
+#define TDO_PORT	GPIOA
+#define TDI_PIN		0
+#define TMS_DIR_PIN	0
+#define TMS_PIN		0
+#define TCK_PIN		0
+#define TDO_PIN		0
 
 #define	PMIC_SW_PORT	GPIOB
 #define PMIC_SW_PIN		GPIO11
 
-#define SWDIO_DIR_PORT	JTAG_PORT
-#define SWDIO_PORT 	JTAG_PORT
-#define SWCLK_PORT 	JTAG_PORT
-#define SWDIO_DIR_PIN	TMS_DIR_PIN
-#define SWDIO_PIN	TMS_PIN
-#define SWCLK_PIN	TCK_PIN
+#define SWDIO_DIR_PORT	GPIOA
+#define SWDIO_PORT 	GPIOA
+#define SWCLK_PORT 	GPIOA
+#define SWDIO_DIR_PIN	0
+#define SWDIO_PIN	0
+#define SWCLK_PIN	0
 
 #define TRST_PORT	GPIOB
-#define TRST_PIN	GPIO1
+#define TRST_PIN	0
 #define PWR_BR_PORT	GPIOB
-#define PWR_BR_PIN	GPIO1
+#define PWR_BR_PIN	0
 #define SRST_PORT	GPIOA
-#define SRST_PIN	GPIO2
+#define SRST_PIN	GPIO3
 #define SRST_SENSE_PORT	GPIOA
-#define SRST_SENSE_PIN	GPIO1
+#define SRST_SENSE_PIN	0
 
 #define USB_PU_PORT	GPIOA
 #define USB_PU_PIN	GPIO8
@@ -128,7 +128,7 @@
 #define PIN_LED_USB		GPIO7
 
 #define PORT_LED_PROG	GPIOB // TODO
-#define PIN_LED_PROG	GPIO0
+#define PIN_LED_PROG	GPIO1
 
 #define TMS_SET_MODE() do { \
 	gpio_set(TMS_DIR_PORT, TMS_DIR_PIN); \
