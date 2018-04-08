@@ -248,15 +248,15 @@ static void adc_init(void)
 {
 	rcc_periph_clock_enable(RCC_ADC1);
 
-	gpio_set_mode(GPIOB, GPIO_MODE_INPUT,
-			GPIO_CNF_INPUT_ANALOG, GPIO0);
+	// gpio_set_mode(GPIOB, GPIO_MODE_INPUT,
+			// GPIO_CNF_INPUT_ANALOG, GPIO0);
 
 	adc_off(ADC1);
 	adc_disable_scan_mode(ADC1);
 	adc_set_single_conversion_mode(ADC1);
 	adc_disable_external_trigger_regular(ADC1);
 	adc_set_right_aligned(ADC1);
-	adc_set_sample_time_on_all_channels(ADC1, ADC_SMPR_SMP_28DOT5CYC);
+	// adc_set_sample_time_on_all_channels(ADC1, ADC_SMPR_SMP_28DOT5CYC);
 
 	adc_power_on(ADC1);
 
