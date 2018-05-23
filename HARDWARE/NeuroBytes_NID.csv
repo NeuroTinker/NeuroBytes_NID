@@ -1,0 +1,40 @@
+Ref,Qty,Value,Link,Mfr,Mfr Part #,Package,RoHS,Subs Allowed
+C1 C10 C8 C4 C3 C2 C14 ,7,100n,https://www.digikey.com/product-detail/en/taiyo-yuden/LMK105BJ104KV-F/587-1227-2-ND/930579,Taiyo Yuden,LMK105BJ104KV-F,C0402,Yes,Yes
+C6 C7 C18 C17 C19 ,5,47p,https://www.digikey.com/product-detail/en/murata-electronics-north-america/GRM1555C1H470JA01D/490-5942-1-ND/3721299,Murata Electronics,GRM1555C1H470JA01D,C0402,Yes,Yes
+C11 C12 C9 C15 ,4,1u,https://www.digikey.com/product-detail/en/taiyo-yuden/LMK107B7105KA-T/587-1242-2-ND/930594,Taiyo Yuden,LMK107B7105KA-T,C0603,Yes,Yes
+C5 C13 ,2,4u7,https://www.digikey.com/product-detail/en/taiyo-yuden/LMK107BJ475KA-T/587-1441-1-ND/1004072,Taiyo Yuden,LMK107BJ475KA-T,C0603,Yes,Yes
+C16 ,1,100u,https://www.digikey.com/product-detail/en/taiyo-yuden/EMK325ABJ107MM-T/587-3152-2-ND/2774763,Taiyo Yuden,EMK325ABJ107MM-T,C1210,Yes,Yes
+D1 ,1,LED,https://www.digikey.com/product-detail/en/rohm-semiconductor/SML-P13PTT86R/846-1197-1-ND/5355789,Rohm Semiconductor,SML-P13PTT86R,L0402,Yes,No
+D2 ,1,LED,https://www.digikey.com/product-detail/en/rohm-semiconductor/SML-P12WTT86R/846-1193-1-ND/5355785,Rohm Semiconductor,SML-P12WTT86R,L0402,Yes,No
+D3 ,1,LED,https://www.digikey.com/product-detail/en/rohm-semiconductor/SML-P12DTT86R/846-1200-1-ND/5722634,Rohm Semiconductor,SML-P12DTT86R,L0402,Yes,No
+D4 ,1,LED,https://www.digikey.com/product-detail/en/rohm-semiconductor/SML-P12VTT86R/846-1168-1-ND/5011427,Rohm Semiconductor,SML-P12VTT86R,L0402,Yes,No
+D5 ,1,D,https://www.digikey.com/products/en/discrete-semiconductor-products/diodes-rectifiers-single/280?k=&pkeyword=&pv7=1&pv1989=0&pv1291=1037&pv1291=2588&FV=ffe00118&quantity=0&ColumnSort=0&page=1&stock=1&pageSize=500,AVX Corporation,SD0805S020S1R0,D0805,Yes,Yes
+FL1 ,1,EMI_Filter_LL-rev,https://www.mouser.com/ProductDetail/994-0805USB-901MLC,Coilcraft,0805USB-901MLC,4-SMT,Yes,No
+J3 ,1,USB_OTG,https://www.digikey.com/product-detail/en/amphenol-fci/10118192-0001LF/609-4613-1-ND/2785378,Amphenol FCI,10118192-0001LF,SMT,Yes,Yes
+J1 ,1,CONN_01X05,https://www.digikey.com/product-detail/en/jst-sales-america-inc/SM05B-GHS-TB-LF-SN/455-1567-2-ND/807789,JST,SM05B-GHS-TB(LF)(SN),SMT,Yes,No
+L2 L1 ,2,Ferrite_Bead,https://www.digikey.com/product-detail/en/laird-signal-integrity-products/HI1206N101R-10/240-2408-1-ND/806768,Laird-Signal Integrity Products,HI1206N101R-10,L1206,Yes,No
+L3 L4 L5,3,Ferrite_Bead,https://www.digikey.com/product-detail/en/wurth-electronics-inc/742792651/732-1593-1-ND/1639537,Wurth Electronics,742792651,L0603,Yes,No
+LS1 ,1,Speaker_Crystal,https://www.digikey.com/product-detail/en/murata-electronics-north-america/PKMCS0909E4000-R1/490-9647-2-ND/4878400,Murata Electronics,PKMCS0909E4000-R1,2-SMT,Yes,No
+Q1 ,1,MMBT3904,https://www.digikey.com/product-detail/en/on-semiconductor/MMBT3904LT1G/MMBT3904LT1GOSTR-ND/919601,ON Semiconductor,MMBT3904LT1G,SOT23,Yes,Yes
+Q2 ,1,2N7002,https://www.digikey.com/product-detail/en/nexperia-usa-inc/2N7002P 215/1727-4692-1-ND/2531105,Nexperia,2N7002P 215 ,SOT23,Yes,Yes
+R3 ,1,243k,https://www.digikey.com/product-detail/en/yageo/RC0402FR-07243KL/YAG3070TR-ND/5280930,Yageo,RC0402FR-07243KL,R0402,Yes,Yes
+R4 R5 ,2,22R,https://www.digikey.com/product-detail/en/yageo/RC0402FR-0722RL/311-22.0LRCT-ND/729509,Yageo,RC0402FR-0722RL,R0402,Yes,Yes
+R1 ,1,1k5,https://www.digikey.com/product-detail/en/yageo/RC0402FR-071K5L/311-1.50KLRTR-ND/726519,Yageo,RC0402FR-071K5L,R0402,Yes,Yes
+R11 ,1,150,https://www.digikey.com/product-detail/en/yageo/RC0402FR-07150RL/311-150LRCT-ND/729490,Yageo,RC0402FR-07150RL,R0402,Yes,Yes
+R12 R13 R14 R15 R9 ,5,1k,https://www.digikey.com/product-detail/en/yageo/RC0402FR-071KL/311-1.00KLRTR-ND/726513,Yageo,RC0402FR-071KL,R0402,Yes,Yes
+R2 ,1,JMP,https://www.digikey.com/product-detail/en/yageo/RC0402JR-070RL/311-0.0JRTR-ND/726406,Yageo,RC0402JR-070RL,R0402,Yes,Yes
+R6 ,1,10k,https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10.0KLRTR-ND/726523,Yageo,RC0402FR-0710KL,R0402,Yes,Yes
+R7 ,1,57k6,https://www.digikey.com/product-detail/en/yageo/RC0402FR-0757K6L/YAG3190TR-ND/5281050,Yageo,RC0402FR-0757K6L,R0402,Yes,Yes
+R8 ,1,10k,https://www.digikey.com/product-detail/en/yageo/RC0402FR-0710KL/311-10.0KLRTR-ND/726523,Yageo,RC0402FR-0710KL ,R0402,Yes,Yes
+R10 R16 R17 ,3,100,https://www.digikey.com/product-detail/en/yageo/RC0402FR-07100RL/311-100LRTR-ND/726527,Yageo,RC0402FR-07100RL,R0402,Yes,Yes
+U1 ,1,TPS2550,https://www.digikey.com/product-detail/en/texas-instruments/TPS2550DBVT/296-23131-1-ND/1812520,Texas Instruments,TPS2550DBVT,SOT23-6,Yes,No
+U3 ,1,LD3985G,https://www.digikey.com/product-detail/en/on-semiconductor/NCP114BSN330T1G/NCP114BSN330T1GOSTR-ND/6560606,ON Semiconductor,NCP114BSN330T1G,SOT-23-5,Yes,Yes
+U2 ,1,STM32F103CBUx,https://www.digikey.com/product-detail/en/stmicroelectronics/STM32F103CBU6/497-17381-ND/3087769,ST Microelectronics, STM32F103CBU6,48-UFQFPN,Yes,No
+U4 ,1,RClamp0503F,https://www.digikey.com/product-detail/en/semtech-corporation/RCLAMP0503F.TCT/RCLAMP0503F.TCTTR-ND/5113629,Semtech Corporation,RCLAMP0503F.TCT,5-TSSOP,Yes,No
+Y1 ,1,8 MHz,https://www.digikey.com/product-detail/en/murata-electronics-north-america/CSTCE8M00G55-R0/490-1195-2-ND/584403,Murata Electronics,CSTCE8M00G55-R0,3-SMT,Yes,No
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git),,,,,,,,
+Generated Wed 23 May 2018 04:32:27 PM CDT,,,,,,,,
