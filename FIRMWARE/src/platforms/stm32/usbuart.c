@@ -137,7 +137,7 @@ static void usbuart_run(void)
 
 void usbuart_set_line_coding(struct usb_cdc_line_coding *coding)
 {
-	usart_set_baudrate(USBUSART, coding->dwDTERate);
+	// usart_set_baudrate(USBUSART, coding->dwDTERate);
 
 	if (coding->bParityType)
 		usart_set_databits(USBUSART, coding->bDataBits + 1);

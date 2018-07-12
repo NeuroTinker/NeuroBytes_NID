@@ -29,6 +29,7 @@
 #include "exception.h"
 #include "gdb_packet.h"
 #include "morse.h"
+#include "usbuart.h"
 
 int
 main(int argc, char **argv)
@@ -44,6 +45,7 @@ main(int argc, char **argv)
 	while (true) {
 		volatile struct exception e;
 		TRY_CATCH(e, EXCEPTION_ALL) {
+			usbuart_init(); // go straight into uart mode for debug
 			gdb_main();
 		}
 		if (e.type) {
