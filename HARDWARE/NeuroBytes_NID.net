@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/zach/Documents/NeuroTinker/Products/NeuroBytes_NID/HARDWARE/NeuroBytes_NID.sch)
-    (date "Wed 23 May 2018 05:00:09 PM CDT")
+    (date "Wed 08 Aug 2018 11:26:01 AM CDT")
     (tool "Eeschema 4.0.7-e2-6376~58~ubuntu14.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -134,7 +134,7 @@
       (tstamp 59EFF61B))
     (comp (ref C11)
       (value 1u)
-      (footprint KiCad_Footprints:ZF_SMD_NonPol_0603)
+      (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
         (field (name Mfr) "Taiyo Yuden")
         (field (name "Mfr Part #") LMK107B7105KA-T)
@@ -147,7 +147,7 @@
       (tstamp 59EFF77D))
     (comp (ref C12)
       (value 1u)
-      (footprint KiCad_Footprints:ZF_SMD_NonPol_0603)
+      (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
         (field (name Mfr) "Taiyo Yuden")
         (field (name "Mfr Part #") LMK107B7105KA-T)
@@ -199,7 +199,7 @@
       (tstamp 59EFF879))
     (comp (ref C9)
       (value 1u)
-      (footprint KiCad_Footprints:ZF_SMD_NonPol_0603)
+      (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
         (field (name Mfr) "Taiyo Yuden")
         (field (name "Mfr Part #") LMK107B7105KA-T)
@@ -225,7 +225,7 @@
       (tstamp 59EFFB50))
     (comp (ref C5)
       (value 4u7)
-      (footprint KiCad_Footprints:ZF_SMD_NonPol_0603)
+      (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
         (field (name Mfr) "Taiyo Yuden")
         (field (name "Mfr Part #") LMK107BJ475KA-T)
@@ -551,7 +551,7 @@
       (tstamp 5A3C57B3))
     (comp (ref C15)
       (value 1u)
-      (footprint KiCad_Footprints:ZF_SMD_NonPol_0603)
+      (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
         (field (name Mfr) "Taiyo Yuden")
         (field (name "Mfr Part #") LMK107B7105KA-T)
@@ -564,7 +564,7 @@
       (tstamp 5A70CE6F))
     (comp (ref C13)
       (value 4u7)
-      (footprint KiCad_Footprints:ZF_SMD_NonPol_0603)
+      (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
         (field (name Mfr) "Taiyo Yuden")
         (field (name "Mfr Part #") LMK107BJ475KA-T)
@@ -738,7 +738,7 @@
       (tstamp 5ACA68C3))
     (comp (ref L3)
       (value Ferrite_Bead)
-      (footprint KiCad_Footprints:ZF_SMD_NonPol_0603)
+      (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
         (field (name Mfr) "Wurth Electronics")
         (field (name "Mfr Part #") 742792651)
@@ -751,7 +751,7 @@
       (tstamp 5ACA80D7))
     (comp (ref L4)
       (value Ferrite_Bead)
-      (footprint KiCad_Footprints:ZF_SMD_NonPol_0603)
+      (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
         (field (name Mfr) "Wurth Electronics")
         (field (name "Mfr Part #") 742792651)
@@ -790,7 +790,7 @@
       (tstamp 5ACA9F80))
     (comp (ref L5)
       (value Ferrite_Bead)
-      (footprint KiCad_Footprints:ZF_SMD_NonPol_0603)
+      (footprint Capacitors_SMD:C_0603_HandSoldering)
       (fields
         (field (name Mfr) "Wurth Electronics")
         (field (name "Mfr Part #") 742792651)
@@ -1053,16 +1053,16 @@
         (pin (num 5) (name GND) (type power_in))
         (pin (num 6) (name Shield) (type passive)))))
   (libraries
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
       (uri /usr/share/kicad/library/conn.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
     (library (logical transistors)
       (uri /usr/share/kicad/library/transistors.lib))
-    (library (logical NeuroTinker_schematic_symbols)
-      (uri /home/zach/Documents/NeuroTinker/Products/NeuroBytes_NID/HARDWARE/Schematic_Lib/NeuroTinker_schematic_symbols.lib))
     (library (logical TP-BMP)
       (uri /home/zach/Documents/NeuroTinker/Products/NeuroBytes_NID/HARDWARE/TP-BMP.lib))
+    (library (logical NeuroTinker_schematic_symbols)
+      (uri /home/zach/Documents/NeuroTinker/Products/NeuroBytes_NID/HARDWARE/Schematic_Lib/NeuroTinker_schematic_symbols.lib))
     (library (logical NeuroBytes_NID-cache)
       (uri /home/zach/Documents/NeuroTinker/Products/NeuroBytes_NID/HARDWARE/NeuroBytes_NID-cache.lib)))
   (nets
