@@ -148,6 +148,8 @@
 #define UART_PIN_SETUP() do { \
 	gpio_set_mode(USBUSART_PORT, GPIO_MODE_OUTPUT_2_MHZ, \
 	              GPIO_CNF_OUTPUT_ALTFN_PUSHPULL, USBUSART_TX_PIN); \
+	gpio_set_mode(USBUSART_PORT, GPIO_MODE_INPUT, \
+				  GPIO_CNF_INPUT_FLOAT, USBUSART_RX_PIN); \
 } while(0)
 
 #define USB_DRIVER stm32f103_usb_driver
@@ -169,6 +171,7 @@
 #define USBUSART_CLK RCC_USART1
 #define USBUSART_PORT GPIOA
 #define USBUSART_TX_PIN GPIO9
+#define USBUSART_RX_PIN GPIO10
 #define USBUSART_ISR usart1_isr
 #define USBUSART_TIM TIM4
 #define USBUSART_TIM_CLK_EN() rcc_periph_clock_enable(RCC_TIM4)
