@@ -79,7 +79,9 @@ const struct command_s cmd_list[] = {
 	{"enter_dfu", (cmd_handler)cmd_enter_dfu, "Enter DFU mode"},
 	{"enter_swd", (cmd_handler)cmd_enter_swd, "Enter SWD mode"},
 	{"enter_uart", (cmd_handler)cmd_enter_uart, "Enter UART mode"},
-	{"led", (cmd_handler)cmd_led, "Toggle LED (for testing)"},
+	{"prog_led", (cmd_handler)cmd_prog_led, "Toggle programming LED"},
+	{"uart_led", (cmd_handler)cmd_uart_led, "Toggle uart LED"},
+	{"usb_led", (cmd_handler)cmd_usb_led, "Toggle usb LED"},
 #ifdef PLATFORM_HAS_POWER_SWITCH
 	{"tpwr", (cmd_handler)cmd_target_power, "Supplies power to the target: (enable|disable)"},
 #endif
@@ -152,9 +154,21 @@ bool cmd_enter_dfu(void)
 	return false;
 }
 
-bool cmd_led(void)
+bool cmd_prog_led(void)
 {
 	gpio_toggle(PORT_LED_PROG, PIN_LED_PROG);
+	return false;
+}
+
+bool cmd_uart_led(void)
+{
+	gpio_toggle(PORT_LED_COMMS, PIN_LED_COMMS);
+	return false;
+}
+
+bool cmd_usb_led(void)
+{
+	gpio_toggle(PORT_LED_USB, PIN_LED_USB);
 	return false;
 }
 
