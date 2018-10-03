@@ -137,7 +137,7 @@ bool cmd_enter_swd(void)
 	usbuart_deinit();
 	gpio_set_mode(SWDIO_PORT, GPIO_MODE_OUTPUT_50_MHZ,
 		GPIO_CNF_OUTPUT_PUSHPULL,
-		SWDIO_PIN);
+		SWDIO_PIN | SWCLK_PIN);
 	return false;
 }
 
