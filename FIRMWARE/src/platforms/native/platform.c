@@ -48,7 +48,7 @@ static void setup_vbus_irq(void);
  */
 int platform_hwversion(void)
 {
-	static int hwversion = -1;
+	static int hwversion = 0b010; // hardcode version number
 	uint16_t hwversion_pins = GPIO7 | GPIO6 | GPIO5;
 	uint16_t unused_pins = hwversion_pins ^ 0xFFFF;
 

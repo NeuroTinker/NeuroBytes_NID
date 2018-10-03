@@ -48,7 +48,9 @@ static bool cmd_version(void);
 static bool cmd_enter_dfu(void);
 static bool cmd_enter_swd(void);
 static bool cmd_enter_uart(void);
-static bool cmd_led(void);
+static bool cmd_prog_led(void);
+static bool cmd_uart_led(void);
+static bool cmd_usb_led(void);
 static bool cmd_help(target *t);
 
 static bool cmd_jtag_scan(target *t, int argc, char **argv);

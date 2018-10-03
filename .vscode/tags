@@ -1,0 +1,290 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CMD_ERASE	../FIRMWARE/scripts/stm32_mem.py	/^CMD_ERASE =                  0x41$/;"	kind:variable	line:30
+CMD_GETCOMMANDS	../FIRMWARE/scripts/stm32_mem.py	/^CMD_GETCOMMANDS =            0x00$/;"	kind:variable	line:28
+CMD_SETADDRESSPOINTER	../FIRMWARE/scripts/stm32_mem.py	/^CMD_SETADDRESSPOINTER =      0x21$/;"	kind:variable	line:29
+DEFAULT_DEVICE	../FIRMWARE/scripts/dfu-convert.py	/^DEFAULT_DEVICE="0x0483:0xdf11"$/;"	kind:variable	line:11
+DFU_ABORT	../FIRMWARE/scripts/dfu.py	/^DFU_ABORT = 0x06$/;"	kind:variable	line:32
+DFU_CLRSTATUS	../FIRMWARE/scripts/dfu.py	/^DFU_CLRSTATUS = 0x04$/;"	kind:variable	line:30
+DFU_DETACH	../FIRMWARE/scripts/dfu.py	/^DFU_DETACH = 0x00$/;"	kind:variable	line:26
+DFU_DETACH_TIMEOUT	../FIRMWARE/scripts/dfu.py	/^DFU_DETACH_TIMEOUT = 1000$/;"	kind:variable	line:23
+DFU_DNLOAD	../FIRMWARE/scripts/dfu.py	/^DFU_DNLOAD = 0x01$/;"	kind:variable	line:27
+DFU_GETSTATE	../FIRMWARE/scripts/dfu.py	/^DFU_GETSTATE = 0x05$/;"	kind:variable	line:31
+DFU_GETSTATUS	../FIRMWARE/scripts/dfu.py	/^DFU_GETSTATUS = 0x03$/;"	kind:variable	line:29
+DFU_STATUS_ERROR_ADDRESS	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_ADDRESS =       0x08$/;"	kind:variable	line:56
+DFU_STATUS_ERROR_CHECK_ERASED	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_CHECK_ERASED =  0x05$/;"	kind:variable	line:53
+DFU_STATUS_ERROR_ERASE	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_ERASE =         0x04$/;"	kind:variable	line:52
+DFU_STATUS_ERROR_FILE	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_FILE =          0x02$/;"	kind:variable	line:50
+DFU_STATUS_ERROR_FIRMWARE	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_FIRMWARE =      0x0a$/;"	kind:variable	line:58
+DFU_STATUS_ERROR_NOTDONE	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_NOTDONE =       0x09$/;"	kind:variable	line:57
+DFU_STATUS_ERROR_POR	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_POR =           0x0d$/;"	kind:variable	line:61
+DFU_STATUS_ERROR_PROG	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_PROG =          0x06$/;"	kind:variable	line:54
+DFU_STATUS_ERROR_STALLEDPKT	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_STALLEDPKT =    0x0f$/;"	kind:variable	line:63
+DFU_STATUS_ERROR_TARGET	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_TARGET =        0x01$/;"	kind:variable	line:49
+DFU_STATUS_ERROR_UNKNOWN	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_UNKNOWN =       0x0e$/;"	kind:variable	line:62
+DFU_STATUS_ERROR_USBR	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_USBR =          0x0c$/;"	kind:variable	line:60
+DFU_STATUS_ERROR_VENDOR	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_VENDOR =        0x0b$/;"	kind:variable	line:59
+DFU_STATUS_ERROR_VERIFY	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_VERIFY =        0x07$/;"	kind:variable	line:55
+DFU_STATUS_ERROR_WRITE	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_ERROR_WRITE =         0x03$/;"	kind:variable	line:51
+DFU_STATUS_OK	../FIRMWARE/scripts/dfu.py	/^DFU_STATUS_OK =                  0x00$/;"	kind:variable	line:46
+DFU_UPLOAD	../FIRMWARE/scripts/dfu.py	/^DFU_UPLOAD = 0x02$/;"	kind:variable	line:28
+DUT_SERIAL	../libopencm3/tests/gadget-zero/test_gadget0.py	/^DUT_SERIAL = "stm32f4disco"$/;"	kind:variable	line:14
+FakeSocket	../FIRMWARE/scripts/gdb.py	/^class FakeSocket:$/;"	kind:class	line:40
+FlashMemory	../FIRMWARE/scripts/gdb.py	/^	class FlashMemory:$/;"	kind:class	line:214
+GZ_REQ_PRODUCE	../libopencm3/tests/gadget-zero/test_gadget0.py	/^GZ_REQ_PRODUCE=2$/;"	kind:variable	line:21
+GZ_REQ_READ_LOOPBACK_BUFFER	../libopencm3/tests/gadget-zero/test_gadget0.py	/^GZ_REQ_READ_LOOPBACK_BUFFER=11$/;"	kind:variable	line:25
+GZ_REQ_SET_ALIGNED	../libopencm3/tests/gadget-zero/test_gadget0.py	/^GZ_REQ_SET_ALIGNED=3$/;"	kind:variable	line:22
+GZ_REQ_SET_PATTERN	../libopencm3/tests/gadget-zero/test_gadget0.py	/^GZ_REQ_SET_PATTERN=1$/;"	kind:variable	line:20
+GZ_REQ_SET_UNALIGNED	../libopencm3/tests/gadget-zero/test_gadget0.py	/^GZ_REQ_SET_UNALIGNED=4$/;"	kind:variable	line:23
+GZ_REQ_WRITE_LOOPBACK_BUFFER	../libopencm3/tests/gadget-zero/test_gadget0.py	/^GZ_REQ_WRITE_LOOPBACK_BUFFER=10$/;"	kind:variable	line:24
+PRODUCT_ID	../libopencm3/tests/gadget-zero/test_gadget0.py	/^PRODUCT_ID=0xcafe$/;"	kind:variable	line:11
+STATE_APP_DETACH	../FIRMWARE/scripts/dfu.py	/^STATE_APP_DETACH =               0x01$/;"	kind:variable	line:36
+STATE_APP_IDLE	../FIRMWARE/scripts/dfu.py	/^STATE_APP_IDLE =                 0x00$/;"	kind:variable	line:35
+STATE_DFU_DOWNLOAD_BUSY	../FIRMWARE/scripts/dfu.py	/^STATE_DFU_DOWNLOAD_BUSY =        0x04$/;"	kind:variable	line:39
+STATE_DFU_DOWNLOAD_IDLE	../FIRMWARE/scripts/dfu.py	/^STATE_DFU_DOWNLOAD_IDLE =        0x05$/;"	kind:variable	line:40
+STATE_DFU_DOWNLOAD_SYNC	../FIRMWARE/scripts/dfu.py	/^STATE_DFU_DOWNLOAD_SYNC =        0x03$/;"	kind:variable	line:38
+STATE_DFU_ERROR	../FIRMWARE/scripts/dfu.py	/^STATE_DFU_ERROR =                0x0a$/;"	kind:variable	line:45
+STATE_DFU_IDLE	../FIRMWARE/scripts/dfu.py	/^STATE_DFU_IDLE =                 0x02$/;"	kind:variable	line:37
+STATE_DFU_MANIFEST	../FIRMWARE/scripts/dfu.py	/^STATE_DFU_MANIFEST =             0x07$/;"	kind:variable	line:42
+STATE_DFU_MANIFEST_SYNC	../FIRMWARE/scripts/dfu.py	/^STATE_DFU_MANIFEST_SYNC =        0x06$/;"	kind:variable	line:41
+STATE_DFU_MANIFEST_WAIT_RESET	../FIRMWARE/scripts/dfu.py	/^STATE_DFU_MANIFEST_WAIT_RESET =  0x08$/;"	kind:variable	line:43
+STATE_DFU_UPLOAD_IDLE	../FIRMWARE/scripts/dfu.py	/^STATE_DFU_UPLOAD_IDLE =          0x09$/;"	kind:variable	line:44
+Spec	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^class Spec():$/;"	kind:class	line:12
+Target	../FIRMWARE/scripts/gdb.py	/^class Target:$/;"	kind:class	line:51
+TestConfigSourceSink	../libopencm3/tests/gadget-zero/test_gadget0.py	/^class TestConfigSourceSink(unittest.TestCase):$/;"	kind:class	line:85
+TestConfigSourceSinkPerformance	../libopencm3/tests/gadget-zero/test_gadget0.py	/^class TestConfigSourceSinkPerformance(unittest.TestCase):$/;"	kind:class	line:184
+TestControlTransfer_Reads	../libopencm3/tests/gadget-zero/test_gadget0.py	/^class TestControlTransfer_Reads(unittest.TestCase):$/;"	kind:class	line:233
+TestGadget0	../libopencm3/tests/gadget-zero/test_gadget0.py	/^class TestGadget0(unittest.TestCase):$/;"	kind:class	line:35
+TestUnaligned	../libopencm3/tests/gadget-zero/test_gadget0.py	/^class TestUnaligned(unittest.TestCase):$/;"	kind:class	line:332
+VENDOR_ID	../libopencm3/tests/gadget-zero/test_gadget0.py	/^VENDOR_ID=0xcafe$/;"	kind:variable	line:10
+__author__	../libopencm3/tests/gadget-zero/stub.py	/^__author__ = 'karlp'$/;"	kind:variable	line:1
+__call__	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def __call__(self, device):$/;"	kind:member	line:31
+__init__	../FIRMWARE/scripts/bootprog.py	/^	def __init__(self, port, baud=115200):$/;"	kind:member	line:25
+__init__	../FIRMWARE/scripts/dfu.py	/^	def __init__(self, buf):$/;"	kind:member	line:66
+__init__	../FIRMWARE/scripts/dfu.py	/^	def __init__(self, dev, conf, iface):$/;"	kind:member	line:74
+__init__	../FIRMWARE/scripts/gdb.py	/^		def __init__(self, target, offset, length, blocksize):$/;"	kind:member	line:215
+__init__	../FIRMWARE/scripts/gdb.py	/^	def __init__(self, file):$/;"	kind:member	line:42
+__init__	../FIRMWARE/scripts/gdb.py	/^	def __init__(self, sock):$/;"	kind:member	line:52
+__init__	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def __init__(self, serial):$/;"	kind:member	line:28
+__repr__	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^    def __repr__(self):$/;"	kind:member	line:13
+_checkack	../FIRMWARE/scripts/bootprog.py	/^	def _checkack(self):$/;"	kind:member	line:55
+_send	../FIRMWARE/scripts/bootprog.py	/^	def _send(self, data):$/;"	kind:member	line:48
+_sendcmd	../FIRMWARE/scripts/bootprog.py	/^	def _sendcmd(self, cmd):$/;"	kind:member	line:41
+_sync	../FIRMWARE/scripts/bootprog.py	/^	def _sync(self):$/;"	kind:member	line:35
+abort	../FIRMWARE/scripts/dfu.py	/^	def abort(self):$/;"	kind:member	line:119
+addr	../FIRMWARE/scripts/bootprog.py	/^	addr = 0x8000000$/;"	kind:variable	line:145
+addr	../FIRMWARE/scripts/bootprog.py	/^	addr = 0x8000000$/;"	kind:variable	line:173
+addr	../FIRMWARE/scripts/stm32_mem.py	/^		addr = 0x8002000$/;"	kind:variable	line:124
+addr	../FIRMWARE/scripts/stm32_mem.py	/^		addr = 0x8004000$/;"	kind:variable	line:122
+address	../FIRMWARE/scripts/dfu-convert.py	/^          address = address & 0xFFFFFFFF$/;"	kind:variable	line:117
+address	../FIRMWARE/scripts/dfu-convert.py	/^          address = int(address,0) & 0xFFFFFFFF$/;"	kind:variable	line:102
+address	../FIRMWARE/scripts/dfu-convert.py	/^        address = ih.minaddr()$/;"	kind:variable	line:114
+args	../FIRMWARE/scripts/stm32_mem.py	/^	args = parser.parse_args()$/;"	kind:variable	line:82
+attach	../FIRMWARE/scripts/gdb.py	/^	def attach(self, pid):$/;"	kind:member	line:121
+baud	../FIRMWARE/scripts/bootprog.py	/^	baud = 115200$/;"	kind:variable	line:144
+baud	../FIRMWARE/scripts/hexprog.py	/^	baud = 115200$/;"	kind:variable	line:75
+bin	../FIRMWARE/scripts/stm32_mem.py	/^		bin = bin[1024:]$/;"	kind:variable	line:140
+bin	../FIRMWARE/scripts/stm32_mem.py	/^	bin = open(args.progfile, "rb").read()$/;"	kind:variable	line:119
+binfile	../FIRMWARE/libopencm3/scripts/lpcvtcksum	/^binfile = open(sys.argv[1], 'r+b')$/;"	kind:variable	line:27
+binfile	../libopencm3/scripts/lpcvtcksum	/^binfile = open(sys.argv[1], 'r+b')$/;"	kind:variable	line:27
+boot	../FIRMWARE/scripts/bootprog.py	/^	boot = stm32_boot(dev, baud)$/;"	kind:variable	line:163
+bootprog.py	../FIRMWARE/scripts/bootprog.py	1;"	kind:file	line:1
+build	../FIRMWARE/scripts/dfu-convert.py	/^def build(file,targets,device=DEFAULT_DEVICE):$/;"	kind:function	line:59
+clear_status	../FIRMWARE/scripts/dfu.py	/^	def clear_status(self):$/;"	kind:member	line:108
+cmds	../FIRMWARE/scripts/bootprog.py	/^	cmds = boot.get()$/;"	kind:variable	line:165
+commit	../FIRMWARE/scripts/gdb.py	/^		def commit(self, progress_cb=None):$/;"	kind:member	line:236
+compute_crc	../FIRMWARE/scripts/dfu-convert.py	/^def compute_crc(data):$/;"	kind:function	line:20
+config_switch	../libopencm3/tests/gadget-zero/stub.py	/^def config_switch():$/;"	kind:function	line:3
+construct_odict	../FIRMWARE/libopencm3/scripts/data/lpc43xx/yaml_odict.py	/^def construct_odict(load, node):$/;"	kind:function	line:3
+construct_odict	../libopencm3/scripts/data/lpc43xx/yaml_odict.py	/^def construct_odict(load, node):$/;"	kind:function	line:3
+consume	../FIRMWARE/scripts/dfu-convert.py	/^def consume(fmt,data,names):$/;"	kind:function	line:15
+convert	../FIRMWARE/libopencm3/scripts/irq2nvic_h	/^def convert(infile, outfile_nvic, outfile_vectornvic, outfile_cmsis):$/;"	kind:function	line:112
+convert	../libopencm3/scripts/irq2nvic_h	/^def convert(infile, outfile_nvic, outfile_vectornvic, outfile_cmsis):$/;"	kind:function	line:112
+convert_file	../FIRMWARE/libopencm3/scripts/data/lpc43xx/csv2yaml.py	/^def convert_file(fname):$/;"	kind:function	line:9
+convert_file	../libopencm3/scripts/data/lpc43xx/csv2yaml.py	/^def convert_file(fname):$/;"	kind:function	line:9
+cstring	../FIRMWARE/scripts/dfu-convert.py	/^def cstring(string):$/;"	kind:function	line:18
+csv2yaml.py	../FIRMWARE/libopencm3/scripts/data/lpc43xx/csv2yaml.py	1;"	kind:file	line:1
+csv2yaml.py	../libopencm3/scripts/data/lpc43xx/csv2yaml.py	1;"	kind:file	line:1
+data	../FIRMWARE/libopencm3/scripts/lpcvtcksum	/^data = vectors$/;"	kind:variable	line:48
+data	../FIRMWARE/scripts/dfu-convert.py	/^        data = ih.tobinstr()$/;"	kind:variable	line:115
+data	../libopencm3/scripts/lpcvtcksum	/^data = vectors$/;"	kind:variable	line:48
+detach	../FIRMWARE/scripts/dfu.py	/^	def detach(self, wTimeout=255):$/;"	kind:member	line:87
+detach	../FIRMWARE/scripts/gdb.py	/^	def detach(self):$/;"	kind:member	line:128
+device	../FIRMWARE/scripts/dfu-convert.py	/^      device=options.device$/;"	kind:variable	line:126
+device	../FIRMWARE/scripts/dfu-convert.py	/^    device = DEFAULT_DEVICE$/;"	kind:variable	line:124
+devs	../FIRMWARE/scripts/dfu.py	/^	devs = finddevs()$/;"	kind:variable	line:177
+devs	../FIRMWARE/scripts/stm32_mem.py	/^	devs = dfu.finddevs()$/;"	kind:variable	line:83
+dfu-convert.py	../FIRMWARE/scripts/dfu-convert.py	1;"	kind:file	line:1
+dfu.py	../FIRMWARE/scripts/dfu.py	1;"	kind:file	line:1
+dfu_device	../FIRMWARE/scripts/dfu.py	/^class dfu_device(object):$/;"	kind:class	line:73
+dfu_status	../FIRMWARE/scripts/dfu.py	/^class dfu_status(object):$/;"	kind:class	line:65
+dfudev	../FIRMWARE/scripts/stm32_mem.py	/^		dfudev = dfu.dfu_device(*dev)$/;"	kind:variable	line:89
+do_readwrite	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def do_readwrite(self):$/;"	kind:member	line:364
+download	../FIRMWARE/scripts/dfu.py	/^	def download(self, wBlockNum, data):$/;"	kind:member	line:92
+eraseall	../FIRMWARE/scripts/bootprog.py	/^	def eraseall(self):$/;"	kind:member	line:71
+fd	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^fd = subprocess.Popen(cmd,shell=True,stdout=subprocess.PIPE).stdout$/;"	kind:variable	line:16
+fields	../FIRMWARE/libopencm3/scripts/data/lpc43xx/gen.py	/^    fields = register['fields']$/;"	kind:variable	line:15
+fields	../libopencm3/scripts/data/lpc43xx/gen.py	/^    fields = register['fields']$/;"	kind:variable	line:15
+find_by_serial	../libopencm3/tests/gadget-zero/test_gadget0.py	/^class find_by_serial(object):$/;"	kind:class	line:27
+finddevs	../FIRMWARE/scripts/dfu.py	/^def finddevs():$/;"	kind:function	line:163
+flash_commit	../FIRMWARE/scripts/gdb.py	/^	def flash_commit(self, progress_cb=None):$/;"	kind:member	line:297
+flash_probe	../FIRMWARE/scripts/gdb.py	/^	def flash_probe(self):$/;"	kind:member	line:273
+flash_write_hex	../FIRMWARE/scripts/hexprog.py	/^def flash_write_hex(target, hexfile, progress_cb=None):$/;"	kind:function	line:29
+flash_write_prepare	../FIRMWARE/scripts/gdb.py	/^	def flash_write_prepare(self, address, data):$/;"	kind:member	line:292
+gdb.py	../FIRMWARE/scripts/gdb.py	1;"	kind:file	line:1
+gen.py	../FIRMWARE/libopencm3/scripts/data/lpc43xx/gen.py	1;"	kind:file	line:1
+gen.py	../libopencm3/scripts/data/lpc43xx/gen.py	1;"	kind:file	line:1
+get	../FIRMWARE/scripts/bootprog.py	/^	def get(self):$/;"	kind:member	line:63
+get_openocd_nrf51_ids.py	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	1;"	kind:file	line:1
+get_state	../FIRMWARE/scripts/dfu.py	/^	def get_state(self):$/;"	kind:member	line:113
+get_status	../FIRMWARE/scripts/dfu.py	/^	def get_status(self):$/;"	kind:member	line:102
+getpacket	../FIRMWARE/scripts/gdb.py	/^	def getpacket(self):$/;"	kind:member	line:58
+handle	../FIRMWARE/scripts/dfu.py	/^		handle = dfu[0].open()$/;"	kind:variable	line:183
+hexfile	../FIRMWARE/scripts/hexprog.py	/^		hexfile = args[0]$/;"	kind:variable	line:91
+hexify	../FIRMWARE/scripts/gdb.py	/^def hexify(s):$/;"	kind:function	line:26
+hexprog.py	../FIRMWARE/scripts/hexprog.py	1;"	kind:file	line:1
+ih	../FIRMWARE/scripts/dfu-convert.py	/^        ih = IntelHex(hex)$/;"	kind:variable	line:113
+infile	../FIRMWARE/scripts/dfu-convert.py	/^    infile = args[0]$/;"	kind:variable	line:134
+inner	../libopencm3/tests/gadget-zero/test_gadget0.py	/^        def inner(x):$/;"	kind:function	line:267
+inner_t	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def inner_t(self, wVal, read_len):$/;"	kind:member	line:249
+interrupt	../FIRMWARE/scripts/gdb.py	/^	def interrupt(self):$/;"	kind:member	line:194
+irq2nvic_h	../FIRMWARE/libopencm3/scripts/irq2nvic_h	1;"	kind:file	line:1
+irq2nvic_h	../libopencm3/scripts/irq2nvic_h	1;"	kind:file	line:1
+lpcvtcksum	../FIRMWARE/libopencm3/scripts/lpcvtcksum	1;"	kind:file	line:1
+lpcvtcksum	../libopencm3/scripts/lpcvtcksum	1;"	kind:file	line:1
+m	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^    m=re.search('.build_code.*=\\s*"(.*)",',line)$/;"	kind:variable	line:32
+m	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^    m=re.search('.flash_size_kb.*=\\s*([0-9]*),',line)$/;"	kind:variable	line:35
+m	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^    m=re.search('.hwid.*=\\s*(0x[0-9A-F]*),',line)$/;"	kind:variable	line:26
+m	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^    m=re.search('.variant.*=\\s*"(.*)",',line)$/;"	kind:variable	line:29
+m	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^    m=re.search('\/\\*(.*)\\*\/',line)$/;"	kind:variable	line:22
+main	../FIRMWARE/libopencm3/scripts/irq2nvic_h	/^def main():$/;"	kind:function	line:144
+main	../libopencm3/scripts/irq2nvic_h	/^def main():$/;"	kind:function	line:144
+make_idle	../FIRMWARE/scripts/dfu.py	/^	def make_idle(self):$/;"	kind:member	line:125
+makeparentdir	../FIRMWARE/libopencm3/scripts/irq2nvic_h	/^def makeparentdir(filename):$/;"	kind:function	line:133
+makeparentdir	../libopencm3/scripts/irq2nvic_h	/^def makeparentdir(filename):$/;"	kind:function	line:133
+man	../FIRMWARE/scripts/dfu.py	/^		man = handle.getString(dfu[0].iManufacturer, 30)$/;"	kind:variable	line:184
+man	../FIRMWARE/scripts/stm32_mem.py	/^		man = dfudev.handle.getString(dfudev.dev.iManufacturer, 30)$/;"	kind:variable	line:90
+mask_bits	../FIRMWARE/libopencm3/scripts/data/lpc43xx/gen.py	/^        mask_bits = (1 << field['width']) - 1$/;"	kind:variable	line:18
+mask_bits	../libopencm3/scripts/data/lpc43xx/gen.py	/^        mask_bits = (1 << field['width']) - 1$/;"	kind:variable	line:18
+memmap_read	../FIRMWARE/scripts/gdb.py	/^	def memmap_read(self):$/;"	kind:member	line:175
+monitor	../FIRMWARE/scripts/gdb.py	/^	def monitor(self, cmd):$/;"	kind:member	line:108
+named	../FIRMWARE/scripts/dfu-convert.py	/^def named(tuple,names):$/;"	kind:function	line:13
+needs_update	../FIRMWARE/libopencm3/scripts/irq2nvic_h	/^def needs_update(infiles, outfiles):$/;"	kind:function	line:140
+needs_update	../libopencm3/scripts/irq2nvic_h	/^def needs_update(infiles, outfiles):$/;"	kind:function	line:140
+numbytes	../FIRMWARE/libopencm3/scripts/lpcvtcksum	/^numbytes = len(remainder) + 32$/;"	kind:variable	line:41
+numbytes	../libopencm3/scripts/lpcvtcksum	/^numbytes = len(remainder) + 32$/;"	kind:variable	line:41
+outfile	../FIRMWARE/scripts/dfu-convert.py	/^    outfile = args[0]$/;"	kind:variable	line:123
+parse	../FIRMWARE/scripts/dfu-convert.py	/^def parse(file,dump_images=False):$/;"	kind:function	line:23
+parser	../FIRMWARE/scripts/dfu-convert.py	/^  parser = OptionParser(usage=usage)$/;"	kind:variable	line:80
+parser	../FIRMWARE/scripts/stm32_mem.py	/^	parser = argparse.ArgumentParser()$/;"	kind:variable	line:79
+product	../FIRMWARE/scripts/dfu.py	/^		product = handle.getString(dfu[0].iProduct, 30)$/;"	kind:variable	line:185
+product	../FIRMWARE/scripts/stm32_mem.py	/^		product = dfudev.handle.getString(dfudev.dev.iProduct, 64)$/;"	kind:variable	line:91
+prog	../FIRMWARE/scripts/bootprog.py	/^	prog = open(progfile, "rb").read()$/;"	kind:variable	line:162
+prog	../FIRMWARE/scripts/gdb.py	/^		def prog(self, offset, data):$/;"	kind:member	line:222
+progress	../FIRMWARE/scripts/hexprog.py	/^	def progress(percent):$/;"	kind:function	line:163
+putpacket	../FIRMWARE/scripts/gdb.py	/^	def putpacket(self, packet):$/;"	kind:member	line:91
+r	../FIRMWARE/scripts/hexprog.py	/^		r = target.monitor("version")$/;"	kind:variable	line:116
+r	../FIRMWARE/scripts/hexprog.py	/^	r = target.monitor("targets")$/;"	kind:variable	line:130
+r	../FIRMWARE/scripts/hexprog.py	/^	r = target.monitor(scan)$/;"	kind:variable	line:125
+rawremainder	../FIRMWARE/libopencm3/scripts/lpcvtcksum	/^rawremainder = binfile.read()$/;"	kind:variable	line:39
+rawremainder	../libopencm3/scripts/lpcvtcksum	/^rawremainder = binfile.read()$/;"	kind:variable	line:39
+rawvectors	../FIRMWARE/libopencm3/scripts/lpcvtcksum	/^rawvectors = binfile.read(32)$/;"	kind:variable	line:28
+rawvectors	../libopencm3/scripts/lpcvtcksum	/^rawvectors = binfile.read(32)$/;"	kind:variable	line:28
+read	../FIRMWARE/scripts/bootprog.py	/^	def read(self, addr, len):$/;"	kind:member	line:79
+read_mem	../FIRMWARE/scripts/gdb.py	/^	def read_mem(self, addr, length):$/;"	kind:member	line:138
+read_protect	../FIRMWARE/scripts/bootprog.py	/^	def read_protect(self):$/;"	kind:member	line:119
+read_regs	../FIRMWARE/scripts/gdb.py	/^	def read_regs(self):$/;"	kind:member	line:156
+read_unprotect	../FIRMWARE/scripts/bootprog.py	/^	def read_unprotect(self):$/;"	kind:member	line:125
+recv	../FIRMWARE/scripts/gdb.py	/^	def recv(self, bufsize):$/;"	kind:member	line:48
+registers	../FIRMWARE/libopencm3/scripts/data/lpc43xx/gen.py	/^registers = yaml.load(open(sys.argv[1], 'r'))$/;"	kind:variable	line:10
+registers	../libopencm3/scripts/data/lpc43xx/gen.py	/^registers = yaml.load(open(sys.argv[1], 'r'))$/;"	kind:variable	line:10
+remainder	../FIRMWARE/libopencm3/scripts/lpcvtcksum	/^remainder = list(struct.unpack('B' * len(rawremainder), rawremainder))$/;"	kind:variable	line:40
+remainder	../libopencm3/scripts/lpcvtcksum	/^remainder = list(struct.unpack('B' * len(rawremainder), rawremainder))$/;"	kind:variable	line:40
+repr_odict	../FIRMWARE/libopencm3/scripts/data/lpc43xx/yaml_odict.py	/^def repr_odict(dumper, data):$/;"	kind:function	line:70
+repr_odict	../libopencm3/scripts/data/lpc43xx/yaml_odict.py	/^def repr_odict(dumper, data):$/;"	kind:function	line:70
+repr_pairs	../FIRMWARE/libopencm3/scripts/data/lpc43xx/yaml_odict.py	/^def repr_pairs(dump, tag, sequence, flow_style=None):$/;"	kind:function	line:48
+repr_pairs	../libopencm3/scripts/data/lpc43xx/yaml_odict.py	/^def repr_pairs(dump, tag, sequence, flow_style=None):$/;"	kind:function	line:48
+reset	../FIRMWARE/scripts/gdb.py	/^	def reset(self):$/;"	kind:member	line:134
+resume	../FIRMWARE/scripts/gdb.py	/^	def resume(self):$/;"	kind:member	line:190
+run_stub	../FIRMWARE/scripts/gdb.py	/^	def run_stub(self, stub, address, *args):$/;"	kind:member	line:198
+s	../FIRMWARE/scripts/hexprog.py	/^		s = Serial(dev, baud, timeout=3)$/;"	kind:variable	line:104
+scan	../FIRMWARE/scripts/hexprog.py	/^	scan = "jtag_scan"$/;"	kind:variable	line:76
+send	../FIRMWARE/scripts/gdb.py	/^	def send(self, data):$/;"	kind:member	line:45
+serial_no	../FIRMWARE/scripts/stm32_mem.py	/^		serial_no = dfudev.handle.getString(dfudev.dev.iSerialNumber, 30)$/;"	kind:variable	line:92
+setUp	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def setUp(self):$/;"	kind:member	line:189
+setUp	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def setUp(self):$/;"	kind:member	line:240
+setUp	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def setUp(self):$/;"	kind:member	line:340
+setUp	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def setUp(self):$/;"	kind:member	line:38
+setUp	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def setUp(self):$/;"	kind:member	line:90
+set_aligned	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def set_aligned(self):$/;"	kind:member	line:360
+set_unaligned	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def set_unaligned(self):$/;"	kind:member	line:356
+spec	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^spec=Spec()$/;"	kind:variable	line:20
+specdict	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^specdict={}$/;"	kind:variable	line:18
+specs	../FIRMWARE/scripts/get_openocd_nrf51_ids.py	/^specs=[]$/;"	kind:variable	line:19
+state	../FIRMWARE/scripts/stm32_mem.py	/^		state = dfu.STATE_APP_IDLE$/;"	kind:variable	line:111
+state	../FIRMWARE/scripts/stm32_mem.py	/^		state = dfudev.get_state()$/;"	kind:variable	line:108
+stm32_boot	../FIRMWARE/scripts/bootprog.py	/^class stm32_boot:$/;"	kind:class	line:24
+stm32_erase	../FIRMWARE/scripts/stm32_mem.py	/^def stm32_erase(dev, addr):$/;"	kind:function	line:32
+stm32_manifest	../FIRMWARE/scripts/stm32_mem.py	/^def stm32_manifest(dev):$/;"	kind:function	line:61
+stm32_mem.py	../FIRMWARE/scripts/stm32_mem.py	1;"	kind:file	line:1
+stm32_set_address	../FIRMWARE/scripts/stm32_mem.py	/^def stm32_set_address(dev, addr):$/;"	kind:function	line:42
+stm32_write	../FIRMWARE/scripts/stm32_mem.py	/^def stm32_write(dev, data):$/;"	kind:function	line:52
+stub.py	../libopencm3/tests/gadget-zero/stub.py	1;"	kind:file	line:1
+stub_opterase	../FIRMWARE/scripts/hexprog.py	/^stub_opterase = '\\nH\\x0bIA`\\x0bIA`\\tI\\x81`\\tI\\x81`\\x01iA\\xf0 \\x01\\x01aA\\xf0@\\x01\\x01a\\xc4hO\\xf0\\x01\\x064B\\xfa\\xd1\\x00\\xbe\\x00 \\x02@#\\x01gE\\xab\\x89\\xef\\xcd'$/;"	kind:variable	line:25
+stub_optprog	../FIRMWARE/scripts/hexprog.py	/^stub_optprog = '\\tJ\\nKS`\\nKS`\\x08K\\x93`\\x08K\\x93`\\x13iC\\xf0\\x10\\x03\\x13a\\x01\\x80\\xd4hO\\xf0\\x01\\x064B\\xfa\\xd1\\x00\\xbe\\x00 \\x02@#\\x01gE\\xab\\x89\\xef\\xcd'$/;"	kind:variable	line:27
+sum	../FIRMWARE/libopencm3/scripts/lpcvtcksum	/^sum = 0$/;"	kind:variable	line:32
+sum	../libopencm3/scripts/lpcvtcksum	/^sum = 0$/;"	kind:variable	line:32
+target	../FIRMWARE/scripts/dfu-convert.py	/^    target = []$/;"	kind:variable	line:92
+target	../FIRMWARE/scripts/hexprog.py	/^		target = gdb.Target(s)$/;"	kind:variable	line:109
+targetlist	../FIRMWARE/scripts/hexprog.py	/^	targetlist = None$/;"	kind:variable	line:124
+targetno	../FIRMWARE/scripts/hexprog.py	/^		targetno = targetlist[0]$/;"	kind:variable	line:144
+targetno	../FIRMWARE/scripts/hexprog.py	/^	targetno = 1$/;"	kind:variable	line:77
+tearDown	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def tearDown(self):$/;"	kind:member	line:102
+tearDown	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def tearDown(self):$/;"	kind:member	line:201
+tearDown	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def tearDown(self):$/;"	kind:member	line:255
+tearDown	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def tearDown(self):$/;"	kind:member	line:353
+tearDown	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def tearDown(self):$/;"	kind:member	line:43
+test_aligned	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_aligned(self):$/;"	kind:member	line:376
+test_basic	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_basic(self):$/;"	kind:member	line:258
+test_config_switch_2	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_config_switch_2(self):$/;"	kind:member	line:49
+test_config_switch_3	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_config_switch_3(self):$/;"	kind:member	line:57
+test_config_zero_addressed	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_config_zero_addressed(self):$/;"	kind:member	line:63
+test_control_known	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_control_known(self):$/;"	kind:member	line:168
+test_control_unknown	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_control_unknown(self):$/;"	kind:member	line:174
+test_fetch_config	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_fetch_config(self):$/;"	kind:member	line:69
+test_gadget0.py	../libopencm3/tests/gadget-zero/test_gadget0.py	1;"	kind:file	line:1
+test_invalid_config	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_invalid_config(self):$/;"	kind:member	line:75
+test_matching_sizes	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_matching_sizes(self):$/;"	kind:member	line:262
+test_mean_limits	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_mean_limits(self):$/;"	kind:member	line:323
+test_read_longer	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_read_longer(self):$/;"	kind:member	line:292
+test_read_needs_zlp	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_read_needs_zlp(self):$/;"	kind:member	line:305
+test_read_nothing	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_read_nothing(self):$/;"	kind:member	line:317
+test_read_perf	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_read_perf(self):$/;"	kind:member	line:208
+test_read_sequence	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_read_sequence(self):$/;"	kind:member	line:147
+test_read_write_interleaved	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_read_write_interleaved(self):$/;"	kind:member	line:160
+test_read_zero	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_read_zero(self):$/;"	kind:member	line:310
+test_read_zeros	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_read_zeros(self):$/;"	kind:member	line:134
+test_sanity	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_sanity(self):$/;"	kind:member	line:46
+test_unaligned	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_unaligned(self):$/;"	kind:member	line:380
+test_waytoobig	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_waytoobig(self):$/;"	kind:member	line:280
+test_write_batch	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_write_batch(self):$/;"	kind:member	line:118
+test_write_mixed	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_write_mixed(self):$/;"	kind:member	line:128
+test_write_perf	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_write_perf(self):$/;"	kind:member	line:220
+test_write_simple	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_write_simple(self):$/;"	kind:member	line:105
+test_write_zlp	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_write_zlp(self):$/;"	kind:member	line:114
+tput	../libopencm3/tests/gadget-zero/test_gadget0.py	/^    def tput(self, xc, te):$/;"	kind:member	line:204
+unhexify	../FIRMWARE/scripts/gdb.py	/^def unhexify(s):$/;"	kind:function	line:33
+upload	../FIRMWARE/scripts/dfu.py	/^	def upload(self, wBlockNum, length):$/;"	kind:member	line:97
+vectors	../FIRMWARE/libopencm3/scripts/lpcvtcksum	/^vectors = list(struct.unpack('<IIIIIIII', rawvectors))$/;"	kind:variable	line:29
+vectors	../libopencm3/scripts/lpcvtcksum	/^vectors = list(struct.unpack('<IIIIIIII', rawvectors))$/;"	kind:variable	line:29
+write	../FIRMWARE/scripts/bootprog.py	/^	def write(self, addr, data):$/;"	kind:member	line:91
+write_mem	../FIRMWARE/scripts/gdb.py	/^	def write_mem(self, addr, data):$/;"	kind:member	line:150
+write_protect	../FIRMWARE/scripts/bootprog.py	/^	def write_protect(self, sectors):$/;"	kind:member	line:103
+write_regs	../FIRMWARE/scripts/gdb.py	/^	def write_regs(self, *regs):$/;"	kind:member	line:168
+write_unprotect	../FIRMWARE/scripts/bootprog.py	/^	def write_unprotect(self):$/;"	kind:member	line:113
+yaml_odict.py	../FIRMWARE/libopencm3/scripts/data/lpc43xx/yaml_odict.py	1;"	kind:file	line:1
+yaml_odict.py	../libopencm3/scripts/data/lpc43xx/yaml_odict.py	1;"	kind:file	line:1
