@@ -1,6 +1,6 @@
 src/include/version.h
 blackmagic
-*.bin
+# *.bin
 *.hex
 blackmagic_dfu
 dfu_upgrade
